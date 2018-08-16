@@ -3,6 +3,8 @@ package com.archisaurus.bean;
 import java.io.Serializable;
 import java.util.List;
 
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.RequestScoped;
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -21,6 +23,8 @@ import static javax.persistence.FetchType.EAGER;
  * The persistent class for the course database table.
  * 
  */
+@ManagedBean (name="course")
+@RequestScoped
 @Entity
 @NamedQuery(name="Course.findAll", query="SELECT c FROM Course c")
 public class Course implements Serializable {
