@@ -1,16 +1,24 @@
 # archisaurus
 
-## Compilacion
+## Construcción de la imagen
 
-mvn clean install -Dmaven.test.skip=true
+Construir la aplicación web utilizando maven y posteriormente generar la imagen Docker la cual iniciará la aplicación en un servidor tomcat accesible en el puerto 18080
 
-docker build -t archisaurus .
+```
+  mvn clean install -Dmaven.test.skip=true 
+  docker build -t peea . 
+```
 
-## Docker stack
+## Ejecución
 
+Es posible iniciar el proyecto de las siguientes maneras
 
-## Docker compose
+* Con Docker Compose
+```
+  docker-compose -f stack.yml up
+```
 
-
-## Ingresar a la aplicación
-
+* Con Docker Stack
+```
+  docker stack deploy -c stack.yml archisaurus
+```
