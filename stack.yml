@@ -1,0 +1,20 @@
+version: '3.1'
+
+services:
+
+  archisaurus:
+    image: archisaurus
+    restart: always
+    ports: 
+      - 18080:8080
+    #links:
+    #  - course-management-mysql
+
+  course-management-mysql:
+    image: mysql
+    restart: always
+    ports: 
+      - 3306:3306
+    environment:
+      MYSQL_DATABASE: course_management
+      MYSQL_ROOT_PASSWORD: root

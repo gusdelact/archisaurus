@@ -1,0 +1,6 @@
+com/archisaurus/bean/Teacher.class
+com/archisaurus/controller/CourseServiceBean.class
+com/archisaurus/bean/Student.class
+com/archisaurus/controller/EntityManagerFactoryBean.class
+com/archisaurus/service/CourseService.class
+com/archisaurus/bean/Course.class
