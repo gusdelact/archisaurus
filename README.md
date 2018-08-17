@@ -6,7 +6,7 @@ Construir la aplicación web utilizando maven y posteriormente generar la imagen
 
 ```
   mvn clean install -Dmaven.test.skip=true 
-  docker build -t peea . 
+  docker build -t archisaurus . 
 ```
 
 ## Ejecución
